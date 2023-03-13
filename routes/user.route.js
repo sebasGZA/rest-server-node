@@ -13,10 +13,10 @@ router.get("/", getUsers);
 
 router.post("/", postUser);
 
-router.put("/", putUser);
+router.put("/:id", putUser);
 
-router.patch("/", patchUser);
+router.patch("/:id", patchUser);
 
-router.delete("/", deleteUser);
+router.delete("/:id", deleteUser);
 
 module.exports = router;
