@@ -7,8 +7,11 @@ const getUsers = (req, res = response) => {
 };
 
 const postUser = (req, res = response) => {
+  const body = req.body;
+
   res.status(201).json({
     msg: "post API - postUser",
+    data: body,
   });
 };
 
